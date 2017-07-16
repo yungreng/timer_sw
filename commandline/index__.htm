@@ -1,0 +1,63 @@
+<html>
+    <style type="text/css">
+	    div#content {background-color:#EEEEEE;  float:center;}
+	    h1 {margin-bottom:0;}
+	    h2 {margin-bottom:0; font-size:14px;}
+	    ul {margin:0;}
+	    li {list-style:none;}
+	    select{position:relative;left:-2px;top:2px;font-size:20px;width:183px;color:green; }
+		table {align:center;}
+	    input{position:relative;left:-2px;top:2px;font-size:20px;width:80px;}
+    </style>
+
+	<div id="content">
+
+
+	<h1 align="center"> <font color="brown">定时器设置!</font> </h1> 
+	<form action="index.htm" method="post"  align="center" >
+	<table align="center">	
+	<input type="submit"  style="background:#FF0000" name=$timer_setup____$ value="设置" /><--------$_time________$---------->
+	<input type="submit" style="background:#00FFFF" name=$timer_read_____$  value="读取" /><br />
+	</table>	<br />
+	<table border="1"  align="center" > 
+	<tr   > 	<td>
+	电源类型:
+	 <select name="power_type" STYLE="width: 80px" /> <font size="10">
+	$option_t1_____________________________________________$
+	$option_t2_____________________________________________$
+	</font>
+	<select /> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+
+	单位时间: &nbsp<select name="time_unit" STYLE="width: 100px" />
+	<font size="10">
+	$option_u1_____________________________________________$
+	$option_u2_____________________________________________$
+	$option_u3_____________________________________________$
+	$option_u4_____________________________________________$
+	</font>
+	<select /> <br /> <br />
+	余下循环(次): $remain_cycles___________________________$ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+	总共循环(次): <input type="text" name="cycles"   value=$cycles_________________________________________$  /><br /> &nbsp &nbsp &nbsp
+	
+	</td> </tr> 
+	<tr  align="center"> 	<td>
+
+	单组设置==><br /> 单 组: 断电时长(开机时间) <input type="text" name="down_time"   value=$dtime0____$ />
+	通电时长 <input type="text" name="up_time"  value=$utime0____$ /> <br /> &nbsp &nbsp &nbsp
+	</td> </tr> 
+
+	<tr   align="center"> 	<td> 多组设置==><br/>
+       第1组: 断电时长(开机时间) <input type="text" name="down_time1"  value=$dtime1____$ /> 通电时长 <input type="text" name="up_time1"  value=$utime1____$ /><br />
+       第2组: 断电时长(开机时间) <input type="text" name="down_time2"  value=$dtime2____$ /> 通电时长 <input type="text" name="up_time2"  value=$utime2____$ /><br />
+       第3组: 断电时长(开机时间) <input type="text" name="down_time3"  value=$dtime3____$ /> 通电时长 <input type="text" name="up_time3"  value=$utime3____$ /><br />
+       第4组: 断电时长(开机时间) <input type="text" name="down_time4"  value=$dtime4____$ /> 通电时长 <input type="text" name="up_time4"  value=$utime4____$ /><br />
+       第5组: 断电时长(开机时间) <input type="text" name="down_time5"  value=$dtime5____$ /> 通电时长 <input type="text" name="up_time5"  value=$utime5____$ /><br />
+       第6组: 断电时长(开机时间) <input type="text" name="down_time6"  value=$dtime6____$ /> 通电时长 <input type="text" name="up_time6"  value=$utime6____$ /><br />
+       第7组: 断电时长(开机时间) <input type="text" name="down_time7"  value=$dtime7____$ /> 通电时长 <input type="text" name="up_time7"  value=$utime7____$ /><br />
+       第8组: 断电时长(开机时间) <input type="text" name="down_time8"  value=$dtime8____$ /> 通电时长 <input type="text" name="up_time8"  value=$utime8____$ /><br />
+	</td> </tr>
+    </table>
+    </div>
+
+</html>
